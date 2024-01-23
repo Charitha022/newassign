@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <script>
+
+      function val() {
+        var name = document.getElementById("t1").value;
+        const regExpress = /^[a-zA-Z]/;
+        if (regExpress.test(name)) alert("success");
+        else alert("not success");
+      }
+      function pas() {
+        if (document.getElementById("ip2").value.length >= 6) alert("pass ok");
+        else 19;
+        alert("pass not ok minimum 6 character");
+      }
+      function em() {
+        const reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        $email = document.getElementById("t2").value;
+        if (reg.test($email)) alert("email validated");
+        else alert("email not valid");
+      }
+      function mob() {
+        $no = document.getElementById("t3").value.length;
+        if ($no == 10) alert("valid number");
+        else alert("not valid number");
+      }
+    </script>
+  </head>
+  <body>
+    Name<input type="text" id="t1" /><input type="button" value="click" onclick="val()" /> <br>
+    Password<input type="password" id="ip2"  /><input type="button" value="click" onclick="pas()" /><br />
+    Email-id<input type="text" id="t2" /><input type="button" value="click" onclick="em()" /><br />
+    PHONE NUMBER<input type="text" id="t3" maxlength="10"  />
+    SEX<input type="text" id="t2" /><input type="button" value="click" onclick="em()" /><br />
+    DOB<input type="text" id="t2" /><input type="button" value="click" onclick="em()" /><br />
+    Food type<input type="text" id="t2" /><input type="button" value="click" onclick="em()" /><br />
+    Address<input type="text" id="t2" /><input type="button" value="click" onclick="em()" /><br />
+    <input type="button" value="click" onclick="mob()" />
+  </body>
+</html>

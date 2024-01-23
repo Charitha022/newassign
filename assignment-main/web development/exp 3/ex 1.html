@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #s1 {
+            position: absolute;
+            top: 18px;
+            left: 15px;
+            font-family: Times;
+            font-size: 38;
+            font-style: italic;
+            letter-spacing: 1em;
+            color: blue;
+            width: 450px;
+        }
+
+        #s2 {
+            font-family: Times;
+            color: black;
+            font-size: 38pt;
+            font-style: italic;
+            position: relative;
+            top: 18px;
+            left: 15px;
+        }
+
+        #s3 {
+            font-family: Times;
+            color: green;
+            font-size: 78pt;
+            font-style: italic;
+            position: static;
+            top: 18px;
+            left: 15px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <p class="p1">---it is absolute position---
+        Apple is red in color.
+        <span id='s1' onmouseover="this.style.color='black'; this.style.fontStyle='italic'; this.style.fontSize='18pt';"
+            onmouseout="this.style.color='blue'; this.style.fontStyle='italic'; this.style.fontSize='24pt';">APPLE</span>
+    </p>
+    <p class="p2">---it is relative position---
+        Apple is red in color. it is a healthy fruit..<span id='s2'>APPLE</span></p>
+    <p class="p2">---it is static position---
+        Apple is red in color. it is a healthy fruit..<span id='s3'>APPLE</span></p>
+    <form name="f1" action="">
+        <input type="text" id="t1" />
+        <input type="button" value="click" onclick="changeBackgroundColor()" />
+    </form>
+    <script>
+         function changeBackgroundColor() {
+            var colorValue = document.getElementById('t1').value;
+            document.body.style.backgroundColor = colorValue;}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+/* styles.css */
+body {
+  background-color: rgb(248, 255, 240);
+  color: rgb(220, 43, 12);
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: rgb(64, 0, 255);
+    font-size: 40px;
+  }
+  
+  p {
+    font-size: 24px;
+  }
+  
